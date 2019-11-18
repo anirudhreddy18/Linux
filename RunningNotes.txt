@@ -1,0 +1,55 @@
+Shell: only UI available in old days. We have GUI and CLI nowadays.
+Bash Default shell: ksh, zsh other shells available
+
+Commands:
+  - ls -l /bin (list files long format in the directory)
+  - ls -la list all all files hidden also starting with .
+
+/etc - contains conf files for the system
+/usr/bin - contains applications for system users
+/sbin - super user directories
+/usr/local/bin - install applications
+/var/log - directory files contains logs
+/home - personal wokring directory
+/root - superuser home directory
+/tmp - temporary files
+
+cp file1 file2
+cp file1 file2 *.html dir1
+cp -r dir1 dir2
+
+mv file file2 
+mv file1 file2 dir1
+mv dir1 dir2
+
+rm file
+rm -r dirname
+
+ls > file.txt //output is stored in to file. Each time command is executed file contents are ovverided
+ls >> file.txt // output is stored in to file. Each time command is executed file contents are appended
+
+sort < file.txt sorts from file
+
+Pipelines - connect multiple commands together  ls -la | less
+Output of ls -la will become input to less command.
+
+echo "test" --> prints typed into shell
+echo $((expression)) - echo $((2+2)) -> 4
+echo $(ls)
+echo group=$(ls) > variables 
+echo $USER -> prints exported variables
+
+printenv | cat -> prints all env variables
+echo "$USER" -> me (expression is evaluated)
+echo '$USER' -> $USER (just displays the same)
+to escape chars put a \ like \$5.00
+
+chmod -> change file rights chmod 755 file.sh
+su| sudo -> temporarily become super user
+chown -> change file ownership chown you(user) file.txt
+chgrp -> change file group ownership chgrp you(group) file.txt
+
+ps -> list all processes  (output)2816 ttys000    0:00.08 /bin/bash -l
+kill -> kill a process (kill 2816)
+
+Grep command used with multiplr arguments
