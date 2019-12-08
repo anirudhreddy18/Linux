@@ -55,3 +55,5 @@ kill -> kill a process (kill 2816)
 Grep command used with multiplr arguments
 
 touch is used toi create empty file or if file exists updates timestamp.
+type -a whoami/id to know what program it is
+man id/whoami/pwd to reafy through all the documentation & options related to it.
