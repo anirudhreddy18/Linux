@@ -53,3 +53,5 @@ ps -> list all processes  (output)2816 ttys000    0:00.08 /bin/bash -l
 kill -> kill a process (kill 2816)
 
 Grep command used with multiplr arguments
+
+touch is used toi create empty file or if file exists updates timestamp.
