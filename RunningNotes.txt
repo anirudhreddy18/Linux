@@ -62,3 +62,7 @@ Root User UID will be 0.
 user sudo command before to run as root user.
 if a script executes perfectly it returns an exit code of 0, so return a exit code of non zero if you eant it to fail.
 = can be used as assignment operator and also comparision operator in if statement. == is used for pattern matching.
+
+su - username to login as other user. #login to shell
+useradd -m username #to add user and a home directory
+
