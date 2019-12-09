@@ -57,3 +57,8 @@ Grep command used with multiplr arguments
 touch is used toi create empty file or if file exists updates timestamp.
 type -a whoami/id to know what program it is
 man id/whoami/pwd to reafy through all the documentation & options related to it.
+
+Root User UID will be 0.
+user sudo command before to run as root user.
+if a script executes perfectly it returns an exit code of 0, so return a exit code of non zero if you eant it to fail.
+= can be used as assignment operator and also comparision operator in if statement. == is used for pattern matching.
