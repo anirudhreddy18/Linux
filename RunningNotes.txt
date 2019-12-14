@@ -66,3 +66,13 @@ if a script executes perfectly it returns an exit code of 0, so return a exit co
 su - username to login as other user. #login to shell
 useradd -m username #to add user and a home directory
 
+When we download files we can compare sha256/sha1/md5 against public sha256 to see if the file donwloaded is corrupted or not.
+if it listed in /usr/bin that means its a program .(type if|head)
+
+fold command to run single line into multiple lines.
+shuf command to shuffle lines in a file
+
+Positional Params -> ${0} ./test.sh
+Displays test.sh 
+
+
