@@ -20,7 +20,7 @@ echo "USERNAME IS $UNAME"
 #Assign to a variable and print exact USERNAME=vagrant
 echo USERNAME=$(id -un)
 
-#if/else statement
+#if/else statement -eq, -lt, -gt, 
 if [[ $UID -eq 0 ]]
 then
   echo "You are root."
@@ -33,12 +33,12 @@ echo "Current UserID is $UID"
 if [[ UID -ne 1000 ]]
 then
   echo "Current UID is $UID"
-  #exit
+  #exit -- you can exit from the script here
 fi 
 
 echo "Current USER is $USER"
 
-#if/else statement
+#if/else statement comparision by string text
 if [[ $USER = vagrant ]]
 then
   echo "You are right user."
