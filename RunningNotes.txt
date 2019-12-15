@@ -82,3 +82,6 @@ $# for number of arguments, $? for last exit status, $a for each argument, $* tr
 
 head command to display the top lines of a file head -c3 /etc/passwd
 tail command to display bottom portion tail -n3 /etc/passwd
+
+UID -> displays USER IF
+USER -> displays current user name 
