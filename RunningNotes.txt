@@ -75,4 +75,7 @@ shuf command to shuffle lines in a file
 Positional Params -> ${0} ./test.sh
 Displays test.sh 
 
+hash command to display alll bash remembered locations.
+Default bash location for all our files are /usr/local/bin. (echo $PATH or which test.sh)
+$# for number of arguments, $? for last exit status
 
