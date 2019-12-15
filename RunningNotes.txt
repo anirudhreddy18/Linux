@@ -80,3 +80,5 @@ hash command to display alll bash remembered locations.
 Default bash location for all our files are /usr/local/bin. (echo $PATH or which test.sh)
 $# for number of arguments, $? for last exit status, $a for each argument, $* treats all argumemts as one
 
+head command to display the top lines of a file head -c3 /etc/passwd
+tail command to display bottom portion tail -n3 /etc/passwd
