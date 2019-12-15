@@ -68,6 +68,7 @@ useradd -m username #to add user and a home directory
 
 When we download files we can compare sha256/sha1/md5 against public sha256 to see if the file donwloaded is corrupted or not.
 if it listed in /usr/bin that means its a program .(type if|head)
+if it shell keyword (help for)
 
 fold command to run single line into multiple lines.
 shuf command to shuffle lines in a file
@@ -77,5 +78,5 @@ Displays test.sh
 
 hash command to display alll bash remembered locations.
 Default bash location for all our files are /usr/local/bin. (echo $PATH or which test.sh)
-$# for number of arguments, $? for last exit status
+$# for number of arguments, $? for last exit status, $a for each argument, $* treats all argumemts as one
 
