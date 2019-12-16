@@ -85,3 +85,9 @@ tail command to display bottom portion tail -n3 /etc/passwd
 
 UID -> displays USER IF
 USER -> displays current user name 
+
+There is a /tmp directory if you need any files to be stored temporarily has write permissions.
+File Descriptor 0 -> STDIN (can come from a file or keyboard)
+File Descriptor 1 -> STDOUT
+File Descriptor 2 -> STDERR
+
