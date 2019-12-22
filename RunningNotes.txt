@@ -91,3 +91,9 @@ File Descriptor 0 -> STDIN (can come from a file or keyboard)
 File Descriptor 1 -> STDOUT
 File Descriptor 2 -> STDERR
 
+Functions syntx
+hello() { echo 'Hello' } --> declaration
+hello       ---> calling function.
+
+readonly VERBOSE='true' . similar to constants.
+
