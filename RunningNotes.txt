@@ -97,3 +97,5 @@ hello       ---> calling function.
 
 readonly VERBOSE='true' . similar to constants.
 
+echo $(( 1 + 2)) -> 3 use (()) for arithmetic expressions
+
