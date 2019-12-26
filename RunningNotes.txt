@@ -64,6 +64,7 @@ if a script executes perfectly it returns an exit code of 0, so return a exit co
 = can be used as assignment operator and also comparision operator in if statement. == is used for pattern matching.
 
 su - username to login as other user. #login to shell
+su -    to login as root user.
 useradd -m username #to add user and a home directory
 
 When we download files we can compare sha256/sha1/md5 against public sha256 to see if the file donwloaded is corrupted or not.
@@ -99,4 +100,9 @@ hello       ---> calling function.
 readonly VERBOSE='true' . similar to constants.
 
 echo $(( 1 + 2)) -> 3 use (()) for arithmetic expressions
+
+locate helps us find where the program exists (locate userdel)
+
+/usr/bin generally has commands that all users need to run like ls,awk etc
+/usr/sbin has commands only system admin users can run like userdel
 
