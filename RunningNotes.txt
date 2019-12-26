@@ -67,7 +67,8 @@ su - username to login as other user. #login to shell
 useradd -m username #to add user and a home directory
 
 When we download files we can compare sha256/sha1/md5 against public sha256 to see if the file donwloaded is corrupted or not.
-if it listed in /usr/bin that means its a program .(type if|head)
+if it listed in /usr/bin that means its a program .(type -a if|head)
+use which to get the location of program (which cp)
 if it shell keyword (help for)
 
 fold command to run single line into multiple lines.
