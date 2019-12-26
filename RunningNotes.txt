@@ -122,3 +122,4 @@ using gunzip to unzip compressed files
 chage to temporarily disable a user account.
 /etc/shells to see what the shells are /bin/sh, /bin/bash/, /sbin/nologin
 usermod to change settings for existing user
+/sbin/nologin deny login access to an account.
