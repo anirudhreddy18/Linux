@@ -8,19 +8,24 @@ Commands:
   - ls -la list all all files hidden also starting with .
 
 /etc - contains conf files for the system
-/usr/bin - contains applications for system users
-/sbin - super user directories
-/usr/local/bin - install applications
+/etc/passwd -> lists all users
+/etc/hosts -> change hostnames
+/etc/init.d -> restart at start up.
+/usr/bin - contains applications for regular users (ls, pwd etc)
+/sbin - super user directories (userdel only superusers can execute)
+/usr/local/bin - install applications from self service like vault not official.
+/usr/share/nginx/html -> for nginx
 /var/log - directory files contains logs
-/home - personal wokring directory
+/var/log/messages -> can use logger program to write messages.
+/home - personal wokring directory or home directory for all users.
 /root - superuser home directory
 /tmp - temporary files
 
-cp file1 file2
+cp file1 file2 (file2 will be created if not exists)
 cp file1 file2 *.html dir1
 cp -r dir1 dir2
 
-mv file file2 
+mv file file2 -> move all contents of file 1 to file2 (file will be created if not exist) 
 mv file1 file2 dir1
 mv dir1 dir2
 
@@ -54,11 +59,11 @@ chgrp -> change file group ownership chgrp you(group) file.txt
 ps -> list all processes  (output)2816 ttys000    0:00.08 /bin/bash -l
 kill -> kill a process (kill 2816)
 
-Grep command used with multiplr arguments
+Grep command used with multiple arguments
 
-touch is used toi create empty file or if file exists updates timestamp.
+touch is used to create empty file or if file exists updates timestamp.
 type -a whoami/id to know what program it is
-man id/whoami/pwd to reafy through all the documentation & options related to it.
+man id/whoami/pwd to read through all the documentation & options related to it.
 
 Root User UID will be 0.
 user sudo command before to run as root user.
@@ -80,14 +85,14 @@ shuf command to shuffle lines in a file
 Positional Params -> ${0} ./test.sh
 Displays test.sh 
 
-hash command to display alll bash remembered locations.
+hash command to display all bash remembered locations.
 Default bash location for all our files are /usr/local/bin. (echo $PATH or which test.sh)
 $# for number of arguments, $? for last exit status, $a for each argument, $* treats all argumemts as one
 
 head command to display the top lines of a file head -c3 /etc/passwd
 tail command to display bottom portion tail -n3 /etc/passwd
 
-UID -> displays USER IF
+UID -> displays USERID
 USER -> displays current user name 
 
 There is a /tmp directory if you need any files to be stored temporarily has write permissions.
@@ -99,9 +104,7 @@ Functions syntx
 hello() { echo 'Hello' } --> declaration
 hello       ---> calling function.
 
-readonly VERBOSE='true' . similar to constants.
-
-echo $(( 1 + 2)) -> 3 use (()) for arithmetic expressions
+readonly VERBOSE='true' . similar to constants in programming languges.
 
 locate helps us find where the program exists (locate userdel)
 
@@ -110,7 +113,7 @@ locate helps us find where the program exists (locate userdel)
 /etc/passwd to find all the users. or ls -l /home 
 
 /etc/login.defs file lists userids of regular accounts /system accounts
-system accounts has userid below 999 & regular users have fro 1000 to 60000.
+system accounts has userid below 999 & regular users have from 1000 to 60000.
 
 tar -cf something.tar foo ->creates a tar
 tar -tf list all files in tar
@@ -120,6 +123,6 @@ gzip to compress files end looks like something.tar.gz
 using gunzip to unzip compressed files
 
 chage to temporarily disable a user account.
-/etc/shells to see what the shells are /bin/sh, /bin/bash/, /sbin/nologin
-usermod to change settings for existing user
+/etc/shells -> to see what the shells are /bin/sh, /bin/bash/, /sbin/nologin
+usermod command -> to change settings for existing user
 /sbin/nologin deny login access to an account.
