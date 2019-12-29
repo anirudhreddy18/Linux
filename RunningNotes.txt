@@ -161,3 +161,34 @@ sudo cat /var/log/messages | awk '{print $5}'| sort | uniq -c | sort -n (print 5
 grep -c 'bash' /etc/passwd (grep to count bash occurences in a file).
 
 cat /etc/passwd | sort -t ':' -k 3 -nr (split by : , sort by 3rd column which is uid)
+
+-----------------------------SED-----------------------------------------------
+Sed used for
+* Substitute some text for other text
+* Remove Lines
+* Append lines
+* Insert text before lines
+
+Sed is case sensitive
+cat hello.txt | sed 's/anirudh/andy/' (Replaces anirudh to andy in file, only replaces 1st occurence in a line)
+cat hello.txt | sed 's/anirudh/andy/g' (Replaces all occurences from anirudh to andy in a single line)
+cat hello.txt | sed 's/anirudh/andy/2' (Replaces 2nd occurence from anirudh to andy in a single line)
+
+sed 's/Anirudh/andy/ig' -i hello.txt (replace content of file use -i option & /gi glbal & case sensitive)
+cat hello.txt | sed 's/ANDY/ani/ig' -i hello.txt (replacing contents of file with pipe)
+
+echo '/home/jason' | sed 's:/home/jason:/export/users/jasonc:' (if you need escape special chars use any delimiter other than / here we used : can also use @#).
+
+Hi this is ani
+cat hello.txt | sed 's/ani/anirudh/gI ; s/^hi/Hello/gI' (can substitute multiple words) o/p:Hello this is anirudh
+cat hello.txt | sed -e 's/ani/anirudh/gI' -e  's/^hi/Hello/gI' (similar to above command)
+
+sed '/^$/d' hello.txt (Delete lines /d, removes blank lines here)
+you can also copy all arguments for sed in to a file and execute too
+sed -f script.sed hello.txt (same as above result)
+
+Use addresses
+sed '2 s/run/execute/' config (replaces line 2 with run to execute)
+sed '1,3 s/run/execute/' config (replaces line 1to 3 with run to execute)
+sed '/#User/,/^$/ s/run/execute/' config (use addresses with regex also, replace lines that matches #User or blank lines)
+
